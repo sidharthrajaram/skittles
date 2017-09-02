@@ -1,2 +1,2 @@
 # skittles
-word problems
+word problem solver for basic arithmetic. 
