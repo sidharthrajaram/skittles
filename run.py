@@ -1,4 +1,5 @@
-#runtime
+#main word problem solver
+
 addwords = ['gets','get','more','add','adds','got','added','received']
 subwords = ['gave','lost','away','takes','take', 'took']
 add_count = 0
@@ -46,11 +47,6 @@ def findOperators():
 						break
 
 					start+=1
-
-
-
-
-
 
 				first = init_index
 				last = end_index
