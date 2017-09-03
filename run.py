@@ -1,9 +1,14 @@
 #runtime
-addwords = ['gets','get','more','add','adds','got','added']
-subwords = ['gave','lost','away']
+addwords = ['gets','get','more','add','adds','got','added','received']
+subwords = ['gave','lost','away','takes']
 add_count = 0
 sub_count = 0
 operation = ''
+operators = []
+numbers = []
+
+def findOperators(problem):
+	pass
 
 def addition(problem):
 	count = 0
@@ -42,14 +47,13 @@ def convert(input):
 	else:
 		operation = '-'
 
-	numbers = []
 	for word in words:
 		try: 
 			num = int(word)
 			numbers.append(str(num))
 		except(ValueError):
 			pass
-			
+
 	print(numbers)
 	for a in range(len(numbers)):
 		if(a == len(numbers)-1):
