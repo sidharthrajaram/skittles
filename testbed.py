@@ -1,7 +1,7 @@
 #main word problem solver
 
-addwords = ['gets','get','more','add','adds','got','added','received']
-subwords = ['gave','lost','away','takes','take', 'took']
+addwords = ['gets','get','more','add','adds','got','added','received','gives']
+subwords = ['gave','lost','away','takes','take', 'took','taking','losing','loses']
 
 multwords = ["each"]
 operation = ''
