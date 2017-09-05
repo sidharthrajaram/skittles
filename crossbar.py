@@ -3,7 +3,8 @@
 addwords = ['gets','get','more','add','adds','got','added','received','gives']
 subwords = ['gave','lost','away','takes','take', 'took','taking','losing','loses']
 
-multwords = ["each"]
+add_count = 0
+sub_count = 0
 operation = ''
 operators = []
 numbers = []
@@ -19,7 +20,7 @@ def findNumbers():
 	print("numbers in problem (in order):")
 	print(numbers)
 
-def findAddSumOperators():
+def findOperators():
 	init_index = 0
 	end_index = 0
 
@@ -97,12 +98,7 @@ problem = problem_input.split()
 
 findNumbers()
 print()
-findAddSumOperators()
-
-# arithmetic = convert(problem)
-# print()
-# print("In arithmetic:")
-# print(arithmetic)
+findOperators()
 
 
 
