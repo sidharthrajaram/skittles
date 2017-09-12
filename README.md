@@ -11,4 +11,4 @@ Another one:
 ![an example](/exampledos.png?raw=true "cmon son")
 
 ###### workin on multiplication and division
-###### nltk implementation
+###### nltk implementation (NLP)
