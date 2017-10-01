@@ -1,4 +1,6 @@
 #addition subtraction 
+import nltk
+from nltk.corpus import wordnet as wn
 
 #keywords (nltk soon)
 addwords = ['gets','get','more','add','adds','got','added','received','gives','receives']
@@ -9,6 +11,25 @@ operation = ''
 operators = []
 numbers = []
 problem = []
+
+
+
+#SANDBOX
+
+starter = ['add', 'get', 'receive']
+for word in starter:
+	for syn in wn.synsets(word, pos=wn.VERB):
+		print()
+		print(syn.definition())
+		print("synonyms")
+		print(syn.hypernyms())
+
+#########
+
+
+
+
+
 
 def findNumbers():
 	for word in problem:
