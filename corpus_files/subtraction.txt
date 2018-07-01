@@ -10,3 +10,4 @@ remove
 subtract
 take
 lose
+diminish
