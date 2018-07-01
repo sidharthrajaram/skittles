@@ -14,17 +14,17 @@ problem = []
 
 
 
-#SANDBOX
+# #SANDBOX
 
-starter = ['add', 'get', 'receive']
-for word in starter:
-	for syn in wn.synsets(word, pos=wn.VERB):
-		print()
-		print(syn.definition())
-		print("synonyms")
-		print(syn.hypernyms())
+# starter = ['add', 'get', 'receive']
+# for word in starter:
+# 	for syn in wn.synsets(word, pos=wn.VERB):
+# 		print()
+# 		print(syn.definition())
+# 		print("synonyms")
+# 		print(syn.hypernyms())
 
-#########
+# #########
 
 
 

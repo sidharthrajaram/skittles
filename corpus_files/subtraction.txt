@@ -1,0 +1,12 @@
+deduct
+detract
+decrease
+difference
+less
+minus
+reduce
+remains
+remove
+subtract
+take
+lose
