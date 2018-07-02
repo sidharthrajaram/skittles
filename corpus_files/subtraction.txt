@@ -11,3 +11,9 @@ subtract
 take
 lose
 diminish
+subtract
+subtraction
+deduction
+lost
+left
+dropped
