@@ -18,3 +18,5 @@ added
 addition
 order
 buy
+bought
+got
