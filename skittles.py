@@ -4,6 +4,8 @@ from nltk.corpus import stopwords
 from nltk.corpus import PlaintextCorpusReader
 import random
 from nltk import word_tokenize
+import operator
+ops = { '+': operator.add, '-': operator.sub } # etc.
 
 corpus_root = 'corpus_files'
 wordlists = PlaintextCorpusReader(corpus_root, '.txt')
@@ -52,10 +54,27 @@ def translate(sentence):
 				translated += ' '+'-'
 	return translated
 
+def solve(problem):
+	OPERATION = '+'
+	problem = word_tokenize(problem)
+	answer = 0
+	for part in problem:
+		try: 
+			num = int(part)
+			answer = ops[OPERATION](answer, num)
+		except(ValueError):
+			if(part == '-'):
+				OPERATION = '-'
+			else:
+				OPERATION = '+'
+			pass
+	return answer
+
 if __name__ == '__main__':
 	sentence = input("word problem: ")
-	print(translate(sentence))
-
+	problem = translate(sentence)
+	print(problem)
+	print('= {}'.format(solve(problem)))
 
 
 
