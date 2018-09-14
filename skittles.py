@@ -5,6 +5,7 @@ from nltk.corpus import PlaintextCorpusReader
 import random
 from nltk import word_tokenize
 import operator
+
 ops = { '+': operator.add, '-': operator.sub } # etc.
 
 corpus_root = 'corpus_files'
